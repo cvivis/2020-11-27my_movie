@@ -10,22 +10,22 @@
 <body>
 <!-- 1280px 기준으로 작업 -->
     <header id = "header">
-        <div class="header__container">
-            <nav class="navbar__sub">
-                <ul class="navbar__submenu">
+        <div class="header_container">
+            <nav class="navbar_sub">
+                <ul class="navbar_submenu">
                     <li><a href="">로그인</a></li>
                     <li><a href="">회원가입</a></li>
                     <li><a href="">빠른예매</a></li>
                 </ul>
             </nav>
-            <nav class="navbar__main">
-                <ul class="navbar__icons">
+            <nav class="navbar_main">
+                <ul class="navbar_icons">
                     <!-- i태그를 아이콘 사용할때 자주 씀  -->
                     <i class="fas fa-bars"></i>
                     <i class="fas fa-search"></i>
                 </ul>
-                <ul class="navbar__menu">
-                    <li><a href="">영화</a></li>
+                <ul class="navbar_menu">
+                    <li><a href=""></a>영화</a></li>
                     <li><a href="">예매</a></li>
                     <li><a href="">극장</a></li>
                     <img src="/img/megabox.png" alt="메가박스">
@@ -33,7 +33,7 @@
                     <li><a href="">스토어</a></li>
                     <li><a href="">혜택</a></li>
                 </ul>
-                <ul class="navbar__icons">
+                <ul class="navbar_icons">
                     <!-- i태그를 아이콘 사용할때 자주 씀  -->
                     <i class="fab fa-twitter"></i>
                     <i class="fab fa-facebook-square"></i>
@@ -52,42 +52,94 @@
     <!-- movie_chart 영화차트-->
     <div id ="movie_chart">
         <div class="chart_container">
-            <div class="sub_title">
-                <button class="boxoffice">박스오피스</button>
-                <a href="/movie" class="more_movie" title="더 많은 영화보기">더 많은 영화보기<i class="fas fa-plus"></i></a>
-            </div>
-            <div class="movie_chart">
-                <div class="chart_cont">
-                        <img class="poster" src="/img/poster1.jpg" alt="엑시트" >
-                    <div class="info">
-                        <button class="view_movie">상세보기</button>
-                        <button class="ticketing">예매</button>
-                    </div>
+            <div class="row">
+                <div class="sub_title">
+                    <button class="boxoffice">박스오피스</button>
+                    <a href="/movie" class="more_movie" title="더 많은 영화보기">더 많은 영화보기<i class="fas fa-plus"></i></a>
                 </div>
-                <div class="chart_cont">
-                        <img class="poster" src="/img/poster1.jpg" alt="엑시트" >
-                    <div class="info">
-                        <button class="view_movie">상세보기</button>
-                        <button class="ticketing">예매</button>
+                <div class="movie_chart">
+                    <div class="chart_cont">
+                        <figure class="poster">
+                            <img  src="/img/poster1.jpg" alt="엑시트" >
+                            <div class="rank"><strong>1</strong></div>
+                        </figure>
+                        <div class="info">
+                            <a class = "more_info" href="#">상세보기</a>
+                            <a class = "ticketing" href="#">예매</a>
+                        </div>
                     </div>
-                </div>
-                <div class="chart_cont">
-                        <img class="poster" src="/img/poster1.jpg" alt="엑시트" >
-                    <div class="info">
-                        <button class="view_movie">상세보기</button>
-                        <button class="ticketing">예매</button>
+                    <div class="chart_cont">
+                        <figure class="poster">
+                            <img  src="/img/poster1.jpg" alt="엑시트" >
+                            <div class="rank"><strong>1</strong></div>
+                        </figure>
+                        <div class="info">
+                            <a class = "more_info" href="#">상세보기</a>
+                            <a class = "ticketing" href="#">예매</a>
+                        </div>
                     </div>
-                </div>
-                <div class="chart_cont">
-                        <img class="poster" src="/img/poster1.jpg" alt="엑시트">
-                    <div class="info">
-                        <button class="view_movie">상세보기</button>
-                        <button class="ticketing">예매</button>
+                    <div class="chart_cont">
+                        <figure class="poster">
+                            <img  src="/img/poster1.jpg" alt="엑시트" >
+                            <div class="rank"><strong>1</strong></div>
+                        </figure>
+                        <div class="info">
+                            <a class = "more_info" href="#">상세보기</a>
+                            <a class = "ticketing" href="#">예매</a>
+                        </div>
+                    </div>
+                    <div class="chart_cont">
+                        <figure class="poster">
+                            <img  src="/img/poster1.jpg" alt="엑시트" >
+                            <div class="rank"><strong>1</strong></div>
+                        </figure>
+                        <div class="info">
+                            <a class = "more_info" href="#">상세보기</a>
+                            <a class = "ticketing" href="#">예매</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- 이벤트 -->
+    <section id = "event">
+    <div class="event_container">
+        <div class="row">
+            <h2 class="title">이벤트</h2>
+            <div class="event">
+                <div class="event_left">
+                    <!-- <div class="event_box1"><img src="/img/event1.jpg" alt="이벤트1"></div>
+                    <div class="event_box2"><img src="/img/event2.png" alt="이벤트2"></div>
+                    <div class="event_box3"><img src="/img/event3.jpg" alt="이벤트3"></div> -->
+                    <img class = "event_box1" src="/img/event1.jpg" alt="이벤트1">
+                    <img class = "event_box2" src="/img/event2.jpg" alt="이벤트2">
+                    <img class = "event_box3" src="/img/event3.jpg" alt="이벤트3">
+                </div>
+                <div class="event_right">
+                    <img class = "event_box4" src="/img/event4.jpg" alt="이벤트4">
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- 안내사항 아이콘들-->
+    <section id = "notice">
+        <div class="notice_container">
+            <div class="row">
+                <div class="pd_icons"></div>
+                <div class="notices"></div>
+            </div>
+        </div>
+    </section>
+
+    
+    
+    
+    
+    <!--푸터영역 -->
     <footer id="footer">
         <div class="footer_container">sdfdf</div>
     </footer>
