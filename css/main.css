@@ -12,7 +12,8 @@ body {
   flex-direction: column;
   margin: 0 auto;
   background-color: black;
-  width: 1280px;
+  /* width: 1280px; */
+  width: 100%;
 }
 .navbar_sub {
   display: flex;
@@ -27,6 +28,7 @@ body {
 }
 .navbar_submenu li {
   padding: 8px;
+  font-size: 15px;
 }
 ul {
   list-style: none;
@@ -43,14 +45,15 @@ ul {
   justify-content: space-between;
   align-items: center;
   margin: 0;
+  padding: 0;
 }
 .navbar_menu li {
-  padding: 20px;
-  font-size: 18px;
+  padding: 0 30px;
+  font-size: 25px;
 }
 .navbar_menu img {
   margin: -35px 0 0 0;
-  width: 00px;
+  width: 300px;
   height: 150px;
   padding: 0;
 }
@@ -59,7 +62,7 @@ ul {
   color: #eae0ff;
 }
 
-.header_container a:hover {
+.header_container .navbar_menu a:hover {
   color: #e600c0;
   border-bottom: 2px solid #e600c0;
 }
@@ -72,9 +75,14 @@ ul {
   display: flex;
   justify-content: flex-end;
   color: #ff56a1;
+  font-size: 30px;
+  padding: 0 30px;
 }
-.navbar_icons i {
-  padding: 12px;
+.navbar_icons a {
+  padding: 0 20px;
+}
+.navbar_icons a:hover {
+  color: #e600c0;
 }
 .main_movie {
   /* display: flex; */
@@ -275,4 +283,73 @@ ul {
 
 .event .event_right .event_box4 {
   height: 100%;
+}
+
+/* 안내사항 */
+
+.notice_container {
+  padding: 100px 0;
+  background-color: #f2f2f2;
+}
+
+.pd_icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.pd_icons i {
+  font-size: 100px;
+  color: #ff56a1;
+}
+
+.pd_icons a .cunt {
+  text-align: center;
+  padding-top: 10px;
+  font-size: 20px;
+}
+
+.pd_icons a:-webkit-any-link {
+  color: black;
+  cursor: pointer;
+}
+/* 공지사항 */
+.notices {
+  border-bottom: 1px solid #ff56a1;
+  padding: 100px 0 0 0;
+  width: 100%;
+}
+
+.notices .sub_tit {
+  display: inline-block;
+  width: 10%;
+  padding: 0 4%;
+  border-right: 1px solid #e600c0;
+  font-size: 20px;
+}
+
+.notices .rolling_wrap {
+  display: inline-block;
+  width: 75%;
+  padding: 0;
+}
+.notices .rolling_wrap .li {
+  list-style: none;
+  width: 200px;
+  font-size: 20px;
+  display: inline-block;
+}
+
+.notices .more_txt {
+  display: inline-block;
+  width: 5%;
+  height: 20px;
+  cursor: pointer;
+  border: 0 none;
+  outline: 0;
+}
+
+.more_txt:focus {
+  color: #666;
+  text-decoration: none;
+  outline: 1px dotted #000;
 }
